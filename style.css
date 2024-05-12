@@ -9,15 +9,18 @@
   --light-green: #c1f7d5;
 }
 
+body {
+  font-family: Helvetica, sans-serif;
+}
+
 .header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   color: var(--light-blue);
-  padding: 1.8rem;
   grid-gap: 1rem 2rem;
-  padding: 1.8rem 3rem;
+  padding: 1.8rem 1.5rem;
   .title {
     font-size: 1.2rem;
   }
@@ -50,7 +53,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 4rem 1rem;
+  padding: 4rem 1.5rem;
   .issue-container {
     display: flex;
     flex-direction: column;
@@ -75,7 +78,8 @@
     color: #fff;
     font-weight: 100;
     width: fit-content;
-    transform: translate(50%, -50%);
+    margin: auto;
+    transform: translate(0%, -50%);
     padding: 0.9rem 2.8rem;
     font-size: 1.2rem;
   }
@@ -90,6 +94,61 @@
   }
 }
 
+.mission-container {
+  background-color: var(--light-blue);
+  color: #fff;
+  padding: 2rem 1.5em;
+
+  .mission-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    .mission-title {
+      color: var(--light-blue);
+      background-color: #fff;
+      width: fit-content;
+      padding: 0.7rem 0.5rem;
+    }
+
+    .mission-info {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-top: 0.6rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  .mission-details {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 3rem 2rem;
+
+    img {
+      height: 45px;
+      color: var(--light-green);
+      margin-bottom: 0.5rem;
+    }
+
+    .details-title {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .details-info {
+      line-height: 1.5rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+
 @media (width >= 1024px) {
   .container {
     max-width: 1000px;
@@ -99,6 +158,7 @@
     grid-template-columns: 0.8fr 1fr 0.4fr;
     grid-template-rows: 1fr;
     justify-content: space-between;
+    padding: 1.8rem 0rem;
     margin: auto;
 
     .title {
@@ -138,13 +198,59 @@
     }
 
     .issue-title {
-      transform: translate(34%, -50%);
+      transform: translate(-47%, -75%);
     }
 
     .issue-info {
-      font-size: 2rem;
+      font-size: 1.8rem;
       text-align: left;
       padding: 1rem 4rem;
+    }
+  }
+
+  .mission-container .container {
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+
+    .mission-card {
+      /* display: flex; */
+      /* flex-direction: row; */
+      /* justify-content: flex-start; */
+      align-items: flex-start;
+      /* gap: 1.5rem; */
+
+      .mission-info {
+        text-align: left;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        /* font-weight: 700; */
+        /* margin-top: 0.6rem; */
+      }
+    }
+    .mission-details {
+      margin-top: 6rem;
+      /* display: grid; */
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 3rem 2rem;
+
+      /* img {
+        height: 45px;
+        color: var(--light-green);
+        margin-bottom: 0.5rem;
+      } */
+
+      .details-title {
+        /* font-weight: 600; */
+        font-size: 1.5rem;
+        /* margin-bottom: 1rem; */
+      }
+
+      .details-info {
+        line-height: 1.5rem;
+        font-size: 0.9rem;
+      }
     }
   }
 }
