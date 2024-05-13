@@ -63,7 +63,7 @@ body {
     font-family: "Flood Std";
     color: #ffffff;
     font-size: 2.8rem;
-    width: 5rem;
+    width: 13rem;
     padding-bottom: 30%;
   }
   .stop-container-card {
@@ -409,6 +409,71 @@ body {
   }
 }
 
+.footer .container {
+  margin-top: 3rem;
+  padding: 1.8rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: start;
+  gap: 3rem;
+
+  ul {
+    list-style: none;
+    color: var(--light-blue);
+
+    a {
+      color: var(--light-blue);
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--light-blue);
+  }
+
+  .contact-us-section {
+    font-size: 0.9rem;
+    li {
+      line-height: 1.6rem;
+    }
+  }
+  .contact-us-section li:first-child {
+    margin-bottom: 0.4rem;
+  }
+
+  .follow-us-section {
+    font-size: 0.9rem;
+    li > a {
+      line-height: 1.7rem;
+    }
+  }
+
+  .follow-us-section li:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .learn-more-section {
+    font-size: 0.9rem;
+    li > a {
+      line-height: 1.7rem;
+    }
+  }
+
+  .learn-more-section li:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .stop-title {
+    color: var(--light-blue);
+    text-align: center;
+    grid-area: 3/2/4/3;
+    font-family: "Flood Std";
+    font-size: 2.5rem;
+  }
+}
+
 @media (width >= 1024px) {
   .container {
     max-width: 1000px;
@@ -626,7 +691,6 @@ body {
       width: 30rem;
     }
     .get-info {
-      
       display: flex;
       gap: 2rem;
       .email {
@@ -637,6 +701,18 @@ body {
         font-size: 1.2rem;
         padding: 1rem 1.5rem;
       }
+    }
+  }
+
+  .footer .container {
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+
+    .stop-title {
+      grid-area: 1/5/2/6;
     }
   }
 }
