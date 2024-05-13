@@ -368,6 +368,47 @@ body {
   }
 }
 
+.subscribe-container {
+  background-color: var(--light-green);
+  padding: 3rem 1.5rem;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    .subs-info {
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: var(--light-blue);
+    }
+    .get-info {
+      display: flex;
+      gap: 0.7rem;
+      align-items: center;
+
+      .email {
+        max-width: 55vw;
+        padding: 0.8rem 1rem;
+        border: none;
+        background-color: white;
+        color: var(--light-blue);
+        border-radius: 2rem;
+        font-size: 0.8rem;
+      }
+
+      .subscribe-btn {
+        background-color: var(--light-blue);
+        color: var(--light-green);
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 0.8rem 0.75rem;
+        border-radius: 2rem;
+      }
+    }
+  }
+}
+
 @media (width >= 1024px) {
   .container {
     max-width: 1000px;
@@ -442,7 +483,6 @@ body {
     }
     .mission-details {
       margin-top: 6rem;
-      /* display: grid; */
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-gap: 3rem 2rem;
@@ -558,7 +598,7 @@ body {
           background-color: #fff;
           color: var(--light-blue);
           padding: 0.7rem 4rem;
-          transform: translate(-25%,50%);
+          transform: translate(-25%, 50%);
         }
         .image-card {
           .card-title {
@@ -575,6 +615,27 @@ body {
             align-self: flex-start;
           }
         }
+      }
+    }
+  }
+
+  .subscribe-container .container {
+    margin: auto;
+    flex-direction: row;
+    .subs-info {
+      width: 30rem;
+    }
+    .get-info {
+      
+      display: flex;
+      gap: 2rem;
+      .email {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+      .subscribe-btn {
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
       }
     }
   }
