@@ -63,7 +63,7 @@ body {
     font-family: "Flood Std";
     color: #ffffff;
     font-size: 2.8rem;
-    /* width: 13rem; */
+    width: 13rem;
     padding-bottom: 30%;
   }
   .stop-container-card {
@@ -514,7 +514,7 @@ body {
     .stop-title {
       margin-top: 4rem;
       font-size: 5rem;
-      /* width: 12rem; */
+      width: fit-content;
       padding-bottom: 2%;
     }
     .stop-container-card {
@@ -663,7 +663,7 @@ body {
           background-color: #fff;
           color: var(--light-blue);
           padding: 0.7rem 4rem;
-          transform: translate(-25%, 50%);
+          transform: translate(-48%, 50%);
         }
         .image-card {
           .card-title {
@@ -687,29 +687,31 @@ body {
   .subscribe-container .container {
     margin: auto;
     flex-direction: row;
-    .subs-info {
-      width: 30rem;
-    }
+    gap: 1.4rem;
     .get-info {
       display: flex;
-      gap: 2rem;
+      gap: 2.3rem;
       .email {
         font-size: 1rem;
         padding: 1rem;
       }
       .subscribe-btn {
         font-size: 1.2rem;
-        padding: 1rem 1.5rem;
+        padding: 0.9rem 3rem;
       }
     }
   }
 
   .footer .container {
     margin: 3rem auto;
-    padding: 0rem;
+    padding: 0rem 0.6rem;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
-
+    ul {
+      a{
+        text-decoration: none;
+      }
+    }
     .stop-title {
       grid-area: 1/5/2/6;
     }
